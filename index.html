@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AttendEase</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="login " id="loginContainer">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Type teacher" required>
+        <input type="password" id="password" placeholder="Type password" required>
+        <button type="submit" class="loginbutton">Login</button>
+    </form>
+</div>
+
+<div class="container hidden" id="attendanceContainer">
+    <h2 style="font-family: boldonse; font-size: 50px; color: #581868;"><i class="fa-solid fa-clipboard-user"></i>  AttendEase</h2>
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="number" id="rollNo" placeholder="Roll No" required>
+        <button type="submit">Add Student</button>
+    </form>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Students will be dynamically added here -->
+        </tbody>
+    </table>
+    <button id="takeAttendanceBtn">Take Attendance</button>
+</div>
+
+<div class="hidden" id="attendancePage">
+    <h2>Attendance</h2>
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Attendance will be dynamically added here -->
+        </tbody>
+    </table>
+    <button id="backToTeacherBtn">Back to Teacher Page</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

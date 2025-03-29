@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Smooth transition between two colors */
+    background: radial-gradient(circle, #00f260, #0575e6); /* Circular gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    min-height: 300px; /* Minimum height */
+    max-height: 80vh; /* Maximum height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max height */
+}
+.login {
+    background-color: #ffffff;;
+    padding: 20px;
+    border-radius: 8px;
+   
+    width: 30%;
+    height:40%;
+
+}
+
+h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+button {
+    background-color: #581868;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px  0;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+}
+.loginbutton{
+    background-color: #0575e6;
+}
+
+button:hover {
+    background-color: #409b40;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #343a40;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.status {
+    color: #28a745; /* Green for present */
+}
+
+.absent {
+    color: #dc3545; /* Red for absent */
+}
+#attendanceContainer h2 {
+    position: sticky;
+    top: 0; /* Sticks to the top of the container */
+    background-color: #ffffff; /* Background color to cover content behind it */
+    padding: 10px; /* Padding for better appearance */
+    z-index: 10; /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
